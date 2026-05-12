@@ -1,2 +1,5 @@
 
 All_data/
+data/ratings.csv
+data/credits.csv
+scripts/__pycache__/
