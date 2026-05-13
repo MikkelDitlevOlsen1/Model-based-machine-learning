@@ -19,40 +19,6 @@ Model-based-machine-learning/
 └── README.md
 ```
 
-## Getting Started
-
-### 1. Set Up Data
-Follow [scripts/kaggle_setup.md](scripts/kaggle_setup.md) to download The Movies Dataset:
-```bash
-# Install Kaggle CLI
-pip install kaggle
-
-# Configure credentials and download
-kaggle datasets download -d rounakbanik/the-movies-dataset
-unzip the-movies-dataset.zip -d data/
-```
-
-### 2. Load Data
-```python
-from scripts.data_loader import MovieDataLoader
-
-loader = MovieDataLoader(data_path='data/')
-loader.load_all(use_small_ratings=True)  # Use small dataset initially
-loader.explore_movies()
-loader.explore_ratings()
-```
-
-### 3. Choose Research Question
-Edit [docs/PROJECT_PLAN.md](docs/PROJECT_PLAN.md) and select one of the research questions:
-- Rating prediction model
-- Revenue modeling
-- User preference inference
-- Temporal trend analysis
-- Joint latent factor model
-
-### 4. Implement PGM in Pyro
-Create model files in `models/` and notebooks in `notebooks/`
-
 ## Dataset Overview
 
 **The Movies Dataset** contains:
