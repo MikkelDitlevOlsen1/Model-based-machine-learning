@@ -3,3 +3,5 @@ All_data/
 data/ratings.csv
 data/credits.csv
 scripts/__pycache__/
+FRED/
+.DS_Store
