@@ -5,3 +5,5 @@ data/credits.csv
 scripts/__pycache__/
 FRED/
 .DS_Store
+
+*/__pycache__
